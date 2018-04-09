@@ -4,6 +4,7 @@
   "description": "MEAN stack application",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,13 +15,14 @@
     "mean"
   ],
   "author": "Richard Parry",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/daisonp/mean-stack-app/issues"
   },
   "homepage": "https://github.com/daisonp/mean-stack-app#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
     "mocha": "^5.0.5"
