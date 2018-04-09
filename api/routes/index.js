@@ -16,5 +16,4 @@ router
   .route('/hotels/new')
   .post( ctrlHotels.hotelsAddOne );
 
-
 module.exports = router;
