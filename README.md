@@ -13,11 +13,14 @@ The MEAN stack is
 **Download from** https://nodejs.org/en/
 
 ### Console commands
-| Description | command |
-|-------------|---------|
+| Description | command | Example |
+|-------------|---------|---------|
 | Check version of node installed | `node -v` |
-| Check version of npm | `npm -v` |
-| To run a node program | `node ./snippets/hello-world.js` |
+| Check version of npm installed | `npm -v` |
+| To run a node program | `node <javascript file>` | `node ./snippets/hello-world.js` |
+| Install npm package globally | `npm install -g <package name>` | -- install globally
+| install locally and update dependencies in package.json | `npm i --save <package name>` |  
+| install locally and update devDependcies in package.json | `npm install --save-dev <package name>` | --
 
 
 ---
@@ -96,4 +99,25 @@ goodbye();
   
 
 ---
+## Application API
+
+**_Hotels_**
+| Method | URL                  | Action                     |
+|--------|----------------------|----------------------------|
+| GET    | /api/hotels          | Get all / Multiple hotels  |
+| POST   | /api/hotels          | Create a new hotel         |
+| GET    | /api/hotels/:hotelid | Get a specific hotel       |
+| PUT    | /api/hotels/:hotelid | Update a specific hotel    |
+| DELETE | /api/hotels/:hotelid | Delete a specific hotel    |
+
+
+**_Hotel Reviews_**
+| Method | URL                                    | Action                                        |
+|--------|----------------------------------------|-----------------------------------------------|
+| GET    | /api/hotels/:hotelid/reviews           | Get all reviews for a specific hotel          |
+| POST   | /api/hotels/:hotelid/reviews           | Add reviews for a specific hotel              |
+| GET    | /api/hotels/:hotelid/reviews/:reviewId | Get a specific review for a specific hotel    |
+| PUT    | /api/hotels/:hotelid/reviews/:reviewId | Update a specific review for a specific hotel |
+| DELETE | /api/hotels/:hotelid/reviews/:reviewId | Delete a specific review for a specific hotel |
+
 

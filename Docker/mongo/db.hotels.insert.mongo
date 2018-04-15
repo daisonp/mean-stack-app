@@ -1,4 +1,4 @@
-use meantest;
+use meanhotel;
 db.hotels.insert([{
     "name": "Corinthia Hotel Budapest",
     "stars": 5,
